@@ -1,7 +1,11 @@
 .title {
   text-align: center;
-  color: white;
   font-family: "Times New Roman", Times, serif;
+  transform-origin: bottom;
+  animation: strobe 1s infinite;
+  animation-delay: 0s, 0.5s;
+  color: rgb(177, 172, 154);
+  font-size: xx-large;
 }
 img {
   width: 30%;
@@ -23,6 +27,8 @@ body {
   background-color: rgba(26, 14, 14, 0.832);
   margin-bottom: 1rem;
   padding: 1rem;
+  position: sticky;
+  top: 20px;
 }
 a {
   color: white;
@@ -31,4 +37,21 @@ a {
 a:hover {
   color: bisque;
   font-size: larger;
+}
+@keyframes strobe {
+  0% {
+    transform: skew(6deg, 0deg) scaleX(1);
+  }
+  10% {
+    transform: skew(1deg, 0deg) scaleY(0.9);
+  }
+  50% {
+    transform: skew(-4deg, 0deg) scaleX(1);
+  }
+  60% {
+    transform: skew(-1deg, 0deg) scaleY(0.9);
+  }
+  100% {
+    transform: skew(6deg, 0deg) scaleX(1);
+  }
 }
