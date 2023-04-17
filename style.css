@@ -1,7 +1,5 @@
 .nav-bar {
   display: flex;
-  background-color: rgba(26, 14, 14, 0.832);
-
   padding: 1rem;
   position: fixed;
   top: 20px;
@@ -146,4 +144,8 @@ button:active {
 }
 .total::before {
   content: "$";
+}
+li {
+  list-style-type: none;
+  margin: 0.5rem;
 }

@@ -24,8 +24,7 @@ body {
 }
 .nav-bar {
   display: flex;
-  justify-content: center;
-  background-color: rgba(26, 14, 14, 0.832);
+  justify-content: start;
   margin-bottom: 1rem;
   padding: 1rem;
   position: sticky;
@@ -55,4 +54,8 @@ a:hover {
   100% {
     transform: skew(6deg, 0deg) scaleX(1);
   }
+}
+li {
+  list-style-type: none;
+  margin: 0.5rem;
 }
